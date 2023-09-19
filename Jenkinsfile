@@ -10,6 +10,6 @@ node  {
     }
     stage ('deployment')
     {
-        deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://localhost:8080/')], contextPath: 'scripteddemo', war: '**/*.war'
+        deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://localhost:8080/')], contextPath: 'scriptedscm', war: '**/*.war'
     }
 }
